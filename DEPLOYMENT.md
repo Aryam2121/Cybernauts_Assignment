@@ -93,12 +93,13 @@ This guide covers deploying the User Relationship & Hobby Network application to
      - **Build Command**: `npm install && npm run build`
      - **Start Command**: `npm start`
      - **Plan**: Free
+     - **Health Check Path**: /api/health
 
 4. **Add Environment Variables**
    ```
    NODE_ENV=production
    MONGODB_URI=your-mongodb-atlas-connection-string
-   PORT=5000
+   PORT=10000
    CORS_ORIGIN=https://your-frontend-url.vercel.app
    ```
 
