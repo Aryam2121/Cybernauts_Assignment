@@ -20,9 +20,9 @@ connectDB();
 app.use(helmet());
 
 // CORS configuration - allow multiple origins
-const allowedOrigins = process.env.CORS_ORIGIN 
-  ? process.env.CORS_ORIGIN.split(',') 
-  : ['http://localhost:3000'];
+const allowedOrigins = process.env.CORS_ORIGIN
+  ? process.env.CORS_ORIGIN.split(',')
+  : ['http://localhost:3000', 'https://cybernauts-assignment-one.vercel.app/'];
 
 app.use(cors({
   origin: (origin, callback) => {
