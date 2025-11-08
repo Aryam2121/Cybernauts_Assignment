@@ -11,6 +11,7 @@ export interface User {
 export interface GraphNode {
   id: string;
   data: {
+    id: string;
     username: string;
     age: number;
     hobbies: string[];

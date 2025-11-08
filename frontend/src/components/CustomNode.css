@@ -13,6 +13,13 @@
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }
 
+.custom-node.drag-over {
+  border-width: 3px;
+  border-style: dashed;
+  transform: scale(1.08);
+  box-shadow: 0 8px 16px rgba(59, 130, 246, 0.3);
+}
+
 .high-score-node {
   border-color: #10b981;
   background: linear-gradient(135deg, #d1fae5 0%, #a7f3d0 100%);

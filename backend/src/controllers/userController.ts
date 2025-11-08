@@ -227,6 +227,7 @@ export const getGraphData = async (req: Request, res: Response, next: NextFuncti
     const nodes = users.map(user => ({
       id: user.id,
       data: {
+        id: user.id,
         username: user.username,
         age: user.age,
         hobbies: user.hobbies,
