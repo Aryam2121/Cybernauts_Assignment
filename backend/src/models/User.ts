@@ -15,7 +15,8 @@ const UserSchema: Schema = new Schema({
   id: {
     type: String,
     required: true,
-    unique: true
+    unique: true,
+    index: true
   },
   username: {
     type: String,
@@ -50,7 +51,6 @@ const UserSchema: Schema = new Schema({
 });
 
 // Index for efficient querying
-UserSchema.index({ id: 1 });
 UserSchema.index({ username: 1 });
 
 // Method to calculate popularity score
